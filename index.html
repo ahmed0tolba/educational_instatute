@@ -440,6 +440,10 @@
       color: #ccc;
     }
 
+    html[dir="ltr"] .pri_table_list li.check::after {
+display: none;
+    }
+
     /* Ensure the original .fa-check icons are hidden in RTL */
     html[dir="rtl"] .pri_table_list ol li.check i.fa-check {
       display: none !important;
