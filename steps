@@ -1,0 +1,8 @@
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahmed0tolba/educational_instatute.git
+git push -u origin main
+
+https://ahmed0tolba.github.io/educational_instatute/
