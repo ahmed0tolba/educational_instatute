@@ -1,0 +1,2368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="page.title">Nile International Academy</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="private school, international education, Cairo, Egypt, bilingual education" name="keywords">
+  <meta
+    content="Nile International Academy - Premier bilingual education in Cairo, Egypt offering American curriculum with Arabic language excellence."
+    name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="css/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive Stylesheet File -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Language Switcher Styles -->
+  <style>
+    .lang-switcher {
+      display: inline-block;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    .lang-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .lang-option {
+      color: black !important;
+    }
+
+    .lang-btn {
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: white;
+      /* padding: 8px 15px; */
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .lang-btn img {
+      width: 20px;
+      margin-right: 8px;
+    }
+
+    .lang-dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      border-radius: 4px;
+      overflow: hidden;
+      padding: .5em;
+      width: 8em;
+    }
+
+    .lang-dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: background 0.3s ease;
+    }
+
+    .lang-dropdown-content a:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-dropdown-content a img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .lang-dropdown:hover .lang-dropdown-content {
+      display: block;
+    }
+
+    /* RTL Support */
+    html[dir="rtl"] {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .navbar-nav {
+      float: right !important;
+    }
+
+    html[dir="rtl"] .lang-btn {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+
+    html[dir="rtl"] .lang-btn img {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+
+    html[dir="rtl"] .single-well ul li i {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
+    /* RTL Specific Adjustments */
+    html[dir="rtl"] .single-well ul {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+
+    html[dir="rtl"] .single-well ul li {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .single-well ul li i {
+      margin-right: 0;
+      margin-left: 10px;
+      float: right;
+    }
+
+    html[dir="rtl"] .faq-details .panel-heading .check-title a {
+      padding-right: 30px;
+      padding-left: 0;
+    }
+
+    html[dir="rtl"] .faq-details .acc-icons {
+      right: 0;
+      left: auto;
+      transform: rotate(180deg);
+    }
+
+    html[dir="rtl"] .faq-details .panel-heading .check-title a[aria-expanded="true"] .acc-icons:before {
+      content: "\f106";
+    }
+
+    html[dir="rtl"] .faq-details .panel-heading .check-title a .acc-icons:before {
+      content: "\f107";
+    }
+
+    html[dir="rtl"] .tab-menu .nav-tabs {
+      padding-right: 0;
+    }
+
+    html[dir="rtl"] .tab-menu .nav-tabs li {
+      float: right;
+    }
+
+    html[dir="rtl"] .tab-menu .nav-tabs li a {
+      margin-right: 0;
+      margin-left: 2px;
+    }
+
+    /* Fix list alignment in about section */
+    html[dir="rtl"] .about-area .single-well ul {
+      text-align: right;
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .about-area .single-well ul li {
+      padding-right: 0;
+      padding-left: 25px;
+    }
+
+    /* Fix FAQ panel arrows */
+    html[dir="rtl"] .panel-heading .check-title a:after {
+      position: absolute;
+      right: auto;
+      left: 15px;
+      transform: rotate(180deg);
+    }
+
+    html[dir="rtl"] .panel-heading .check-title a[aria-expanded="true"]:after {
+      content: "\f106";
+    }
+
+    html[dir="rtl"] .panel-heading .check-title a:after {
+      content: "\f107";
+    }
+
+    /* Fix tab content alignment */
+    html[dir="rtl"] .tab-content {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .tab-content p {
+      text-align: right;
+    }
+
+    /* Fix navigation tabs in FAQ */
+    html[dir="rtl"] .nav-tabs>li.active>a,
+    html[dir="rtl"] .nav-tabs>li.active>a:focus,
+    html[dir="rtl"] .nav-tabs>li.active>a:hover {
+      border-left-color: transparent;
+      border-right-color: #ddd;
+    }
+
+    /* Better RTL support for all lists */
+    html[dir="rtl"] ul,
+    html[dir="rtl"] ol {
+      padding-right: 20px;
+      padding-left: 0;
+    }
+
+    /* Fix checkmark icons in lists */
+    html[dir="rtl"] .fa-check {
+      margin-right: 0 !important;
+      margin-left: 8px !important;
+    }
+
+    /* Fix panel body text alignment */
+    html[dir="rtl"] .panel-body {
+      text-align: right;
+    }
+
+    /* Fix the entire FAQ section layout */
+    html[dir="rtl"] .faq-details {
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .faq-details .panel-group {
+      text-align: right;
+    }
+
+    /* Fix the tab menu for RTL */
+    html[dir="rtl"] .nav-tabs {
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .nav-tabs>li {
+      float: right;
+    }
+
+    html[dir="rtl"] .nav-tabs>li>a {
+      margin-right: 0;
+      margin-left: 2px;
+    }
+
+    /* Fix tab content text alignment */
+    html[dir="rtl"] .tab-pane {
+      text-align: right;
+    }
+
+    /* RTL Support */
+    html[dir="rtl"] {
+      text-align: right;
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .navbar-nav {
+      float: right !important;
+    }
+
+    html[dir="rtl"] .lang-btn {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+
+    html[dir="rtl"] .lang-btn img {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+
+    html[dir="rtl"] .single-well ul li i {
+      margin-right: 0;
+      margin-left: 10px;
+      float: right;
+    }
+
+    /* About section RTL fixes */
+    html[dir="rtl"] .about-area .single-well {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .about-area .single-well ul {
+      padding-right: 20px;
+      padding-left: 0;
+      text-align: right;
+    }
+
+    html[dir="rtl"] .about-area .single-well ul li {
+      padding-right: 25px;
+      padding-left: 0;
+      position: relative;
+    }
+
+    /* FAQ section RTL fixes */
+    html[dir="rtl"] .faq-area {
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .faq-details .panel-heading {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .faq-details .check-title a {
+      padding-right: 30px;
+      padding-left: 0;
+      position: relative;
+    }
+
+    html[dir="rtl"] .faq-details .check-title a .acc-icons {
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    html[dir="rtl"] .faq-details .panel-body {
+      text-align: right;
+      padding: 15px;
+    }
+
+    /* Tab menu RTL fixes */
+    html[dir="rtl"] .tab-menu .nav-tabs {
+      padding-right: 0;
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .tab-menu .nav-tabs li {
+      float: right;
+      margin-bottom: -1px;
+    }
+
+    html[dir="rtl"] .tab-menu .nav-tabs li a {
+      margin-right: 0;
+      margin-left: 2px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    html[dir="rtl"] .tab-menu .nav-tabs li.active a {
+      border-color: #ddd #ddd transparent;
+    }
+
+    /* Tab content RTL fixes */
+    html[dir="rtl"] .tab-content {
+      text-align: right;
+      direction: rtl;
+    }
+
+    html[dir="rtl"] .tab-content .event-content {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .tab-content p {
+      text-align: right;
+      direction: rtl;
+    }
+
+    /* General RTL text alignment */
+    html[dir="rtl"] h1,
+    html[dir="rtl"] h2,
+    html[dir="rtl"] h3,
+    html[dir="rtl"] h4,
+    html[dir="rtl"] h5,
+    html[dir="rtl"] h6 {
+      text-align: right;
+    }
+
+    html[dir="rtl"] p {
+      text-align: right;
+      direction: rtl;
+    }
+
+    /* Fix list items in all sections */
+    html[dir="rtl"] ul,
+    html[dir="rtl"] ol {
+      padding-right: 20px;
+      padding-left: 0;
+      text-align: right;
+    }
+
+    html[dir="rtl"] li {
+      text-align: right;
+    }
+
+    /* Fix check icons */
+    html[dir="rtl"] .fa-check,
+    html[dir="rtl"] .fa-check-circle {
+      margin-right: 0 !important;
+      margin-left: 8px !important;
+    }
+
+    /* Fix cross icons */
+    /* html[dir="rtl"] .check.cross .fa-check {
+      display: none;
+    }
+
+    html[dir="rtl"] .check.cross:before {
+      content: "✗";
+      margin-left: 8px;
+      margin-right: 0;
+    } */
+
+    /* Add this instead: */
+    html[dir="rtl"] .pri_table_list ol li.check {
+      position: relative;
+      padding-right: 25px;
+      padding-left: 0;
+    }
+
+    html[dir="rtl"] .pri_table_list ol li.check:before {
+      content: "\f00c";
+      /* FontAwesome check icon */
+      font-family: "FontAwesome";
+      position: absolute;
+      right: 0;
+      left: auto;
+      color: #3EC1D5;
+    }
+
+    html[dir="rtl"] .pri_table_list ol li.check.cross:before {
+      content: "\f00d";
+      /* FontAwesome x icon */
+      color: #ccc;
+    }
+
+    /* Ensure the original .fa-check icons are hidden in RTL */
+    html[dir="rtl"] .pri_table_list ol li.check i.fa-check {
+      display: none !important;
+    }
+
+    /* Also fix the original LTL version to not have duplicate icons */
+    .pri_table_list ol li.check {
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .pri_table_list ol li.check:before {
+      content: "\f00c";
+      /* FontAwesome check icon */
+      font-family: "FontAwesome";
+      position: absolute;
+      left: 0;
+      color: #3EC1D5;
+    }
+
+    .pri_table_list ol li.check.cross:before {
+      content: "\f00d";
+      /* FontAwesome x icon */
+      color: #ccc;
+    }
+
+    /* Hide the actual <i> elements to prevent duplication */
+    .pri_table_list ol li.check i.fa-check {
+      display: none !important;
+    }
+
+    /* Panel group RTL */
+    html[dir="rtl"] .panel-group .panel {
+      text-align: right;
+    }
+
+    /* Section headings */
+    html[dir="rtl"] .section-headline {
+      text-align: center;
+    }
+
+    html[dir="rtl"] .section-headline h2 {
+      text-align: center;
+    }
+
+    /* For tuition pricing tables - fix duplicate icons */
+    html[dir="rtl"] .pri_table_list ol li.check i.fa-check {
+      display: none !important;
+    }
+
+    html[dir="rtl"] .pri_table_list ol li.check.cross i.fa-check {
+      display: none !important;
+    }
+
+    /* Add proper spacing for RTL */
+    html[dir="rtl"] .pri_table_list ol li {
+      padding-right: 25px;
+      padding-left: 0;
+      text-align: right;
+      position: relative;
+    }
+
+    /* Add the icons using CSS instead of HTML */
+    html[dir="rtl"] .pri_table_list ol li.check:after {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      color: #3EC1D5;
+      font-weight: bold;
+    }
+
+    html[dir="rtl"] .pri_table_list ol li.check.cross:after {
+      content: "✗";
+      color: #ccc;
+    }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="preloader"></div>
+
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area" style="height: 6em;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                  <h1><span>N</span>IA</h1>
+                  <small data-i18n="nav.brand_subtitle">Nile International Academy</small>
+                </a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="lang-switcher">
+                    <div class="lang-dropdown">
+                      <button class="lang-btn" id="current-lang-btn">
+                        <img src="https://flagcdn.com/w20/gb.png" id="current-flag" alt="English">
+                        <span id="current-lang">EN</span>
+                      </button>
+                      <div class="lang-dropdown-content">
+                        <a href="#" class="lang-option" data-lang="en">
+                          <img src="https://flagcdn.com/w20/gb.png" alt="English"> English
+                        </a>
+                        <a href="#" class="lang-option" data-lang="ar">
+                          <img src="https://flagcdn.com/w20/sa.png" alt="العربية"> العربية
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <a class="page-scroll" href="#home" data-i18n="nav.home">Home</a>
+                  </li>
+                  <!-- <li>
+                    <a class="page-scroll" href="#about" data-i18n="nav.about">About</a>
+                  </li> -->
+                  <li>
+                    <a class="page-scroll" href="#academics" data-i18n="nav.academics">Academics</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#faculty" data-i18n="nav.faculty">Faculty</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#campus" data-i18n="nav.campus">Campus</a>
+                  </li>
+                  <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-i18n="nav.admissions">
+                      Admissions<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#" data-i18n="nav.admissions_apply">Apply Now</a></li>
+                      <li><a href="#" data-i18n="nav.admissions_tour">Schedule Tour</a></li>
+                      <li><a href="#" data-i18n="nav.admissions_fees">Tuition Fees</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li>
+                    <a class="page-scroll" href="#contact" data-i18n="nav.contact">Contact</a>
+                  </li> -->
+
+                  <!-- Language Switcher -->
+
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
+            </nav>
+            <!-- END: Navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
+
+  <!-- Start Slider Area -->
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        <img src="img/school1.png" alt="" title="#slider-direction-1" />
+        <img src="img/school2.png" alt="" title="#slider-direction-2" />
+        <img src="img/school3.png" alt="" title="#slider-direction-3" />
+      </div>
+
+      <!-- direction 1 -->
+      <div id="slider-direction-1" class="nivo-html-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1" data-i18n="slider.1.title1">Excellence in Bilingual Education</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2" data-i18n="slider.1.title2">Nurturing Global Citizens Through Academic Excellence
+                  </h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#academics" data-i18n="slider.see_programs">See
+                    Programs</a>
+                  <a class="ready-btn page-scroll" href="#contact" data-i18n="slider.contact_us">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 2 -->
+      <div id="slider-direction-2" class="nivo-html-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content text-center">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1" data-i18n="slider.2.title1">American Curriculum • Arabic Excellence</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2" data-i18n="slider.2.title2">Preparing Students for Universities Worldwide</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#about" data-i18n="slider.learn_more">Learn More</a>
+                  <a class="ready-btn page-scroll" href="#contact" data-i18n="slider.schedule_tour">Schedule Tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 3 -->
+      <div id="slider-direction-3" class="nivo-html-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1" data-i18n="slider.3.title1">State-of-the-Art Facilities</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2" data-i18n="slider.3.title2">Modern Learning Environment in New Cairo</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#campus" data-i18n="slider.view_campus">View
+                    Campus</a>
+                  <a class="ready-btn page-scroll" href="#contact" data-i18n="slider.apply_now">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Slider Area -->
+
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 data-i18n="about.title">About Nile International Academy</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+                <img src="img/about/school-building.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head" data-i18n="about.subtitle">Our Educational Philosophy</h4>
+              </a>
+              <p data-i18n="about.description">
+                Founded in 2005, Nile International Academy is a premier bilingual institution in Cairo offering
+                American curriculum education with strong Arabic language and cultural programs. We prepare students for
+                global citizenship while maintaining deep connections to Egyptian heritage.
+              </p>
+              <ul>
+                <li>
+                  <i class="fa fa-check"></i> <span data-i18n="about.feature1">American Curriculum (K-12)</span>
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> <span data-i18n="about.feature2">Bilingual English/Arabic Programs</span>
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> <span data-i18n="about.feature3">University Preparation &
+                    Counseling</span>
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> <span data-i18n="about.feature4">STEM & Innovation Labs</span>
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> <span data-i18n="about.feature5">Sports & Arts Facilities</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+
+  <!-- Start Academics area -->
+  <div id="academics" class="services-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline services-head text-center">
+            <h2 data-i18n="academics.title">Academic Programs</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="services-contents">
+          <!-- Start Left services -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-graduation-cap"></i>
+                  </a>
+                  <h4 data-i18n="academics.1.title">Elementary School</h4>
+                  <p data-i18n="academics.1.description">
+                    Kindergarten to Grade 5: Foundation building with bilingual literacy, numeracy, and social
+                    development in a nurturing environment.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-book"></i>
+                  </a>
+                  <h4 data-i18n="academics.2.title">Middle School</h4>
+                  <p data-i18n="academics.2.description">
+                    Grades 6-8: Specialized subject teaching, critical thinking development, and introduction to
+                    advanced academic concepts.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-university"></i>
+                  </a>
+                  <h4 data-i18n="academics.3.title">High School</h4>
+                  <p data-i18n="academics.3.description">
+                    Grades 9-12: College preparatory program with AP courses, university counseling, and specialized
+                    tracks.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-flask"></i>
+                  </a>
+                  <h4 data-i18n="academics.4.title">STEM Program</h4>
+                  <p data-i18n="academics.4.description">
+                    Advanced Science, Technology, Engineering & Mathematics program with robotics, coding, and research
+                    opportunities.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-language"></i>
+                  </a>
+                  <h4 data-i18n="academics.5.title">Arabic Program</h4>
+                  <p data-i18n="academics.5.description">
+                    Comprehensive Arabic language curriculum including Modern Standard Arabic and classical literature
+                    studies.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-futbol-o"></i>
+                  </a>
+                  <h4 data-i18n="academics.6.title">Extracurricular</h4>
+                  <p data-i18n="academics.6.description">
+                    Sports teams, arts programs, music, drama, debate club, and community service opportunities.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Academics area -->
+
+  <!-- our-skill-area start -->
+  <div class="our-skill-area fix hidden-sm">
+    <div class="test-overly"></div>
+    <div class="skill-bg area-padding-2">
+      <div class="container">
+        <!-- section-heading end -->
+        <div class="row">
+          <div class="skill-text">
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="98" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4" data-i18n="stats.graduation">Graduation Rate</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="92" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4" data-i18n="stats.university">University Acceptance</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4" data-i18n="stats.satisfaction">Parent Satisfaction</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="88" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4" data-i18n="stats.retention">Teacher Retention</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- our-skill-area end -->
+
+  <!-- Faq area start -->
+  <div class="faq-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="faq-details">
+            <div class="panel-group" id="accordion">
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+                    <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">
+                      <span class="acc-icons"></span> <span data-i18n="faq.1.question">What curriculum do you
+                        follow?</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="check1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p data-i18n="faq.1.answer">
+                      We follow an American curriculum aligned with Common Core standards, enhanced with Arabic language
+                      and Islamic studies for Muslim students. Our program prepares students for both American and
+                      Egyptian university systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check2">
+                      <span class="acc-icons"></span> <span data-i18n="faq.2.question">What are the school hours?</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="check2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p data-i18n="faq.2.answer">
+                      School operates Sunday through Thursday from 7:30 AM to 3:00 PM. Extended care is available until
+                      5:00 PM for working parents. Extra-curricular activities typically run from 3:15 PM to 4:30 PM.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check3">
+                      <span class="acc-icons"></span> <span data-i18n="faq.3.question">Do you offer
+                        transportation?</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="check3" class="panel-collapse collapse ">
+                  <div class="panel-body">
+                    <p data-i18n="faq.3.answer">
+                      Yes, we provide safe and monitored transportation services covering most areas of Cairo. Our buses
+                      are equipped with GPS tracking, seat belts, and are supervised by trained attendants.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check4">
+                      <span class="acc-icons"></span> <span data-i18n="faq.4.question">What universities do your
+                        graduates attend?</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="check4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p data-i18n="faq.4.answer">
+                      Our graduates have been accepted to top universities worldwide including Harvard, MIT, Stanford,
+                      AUC, Cairo University, and universities in the UK, Canada, and throughout Europe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="tab-menu">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active">
+                <a href="#p-view-1" role="tab" data-toggle="tab" data-i18n="tabs.academic">Academic Calendar</a>
+              </li>
+              <li>
+                <a href="#p-view-2" role="tab" data-toggle="tab" data-i18n="tabs.admissions">Admissions Process</a>
+              </li>
+              <li>
+                <a href="#p-view-3" role="tab" data-toggle="tab" data-i18n="tabs.support">Student Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="p-view-1">
+              <div class="tab-inner">
+                <div class="event-content head-team">
+                  <h4 data-i18n="tabs.academic">Academic Calendar</h4>
+                  <p data-i18n="tabs.academic_content1">
+                    The academic year runs from September to June with three terms. We observe both Egyptian and
+                    international holidays. Summer programs are available in July for enrichment and review.
+                  </p>
+                  <p data-i18n="tabs.academic_content2">
+                    Key dates include parent-teacher conferences in October and March, mid-term breaks in November and
+                    April, and final exams in May. Detailed calendar available upon request.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="p-view-2">
+              <div class="tab-inner">
+                <div class="event-content head-team">
+                  <h4 data-i18n="tabs.admissions">Admissions Process</h4>
+                  <p data-i18n="tabs.admissions_content1">
+                    Admissions are selective and based on previous academic records, entrance assessments, and family
+                    interviews. Applications for the upcoming academic year open in January.
+                  </p>
+                  <p data-i18n="tabs.admissions_content2">
+                    Required documents include birth certificate, previous school records, passport photos, and medical
+                    reports. Scholarships available for exceptional students.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="p-view-3">
+              <div class="tab-inner">
+                <div class="event-content head-team">
+                  <h4 data-i18n="tabs.support">Student Support</h4>
+                  <p data-i18n="tabs.support_content1">
+                    We provide comprehensive support including learning resource center, counseling services, college
+                    advising, and special education support. Our student-teacher ratio is 15:1.
+                  </p>
+                  <p data-i18n="tabs.support_content2">
+                    Additional services include after-school tutoring, university test preparation (SAT/ACT), and career
+                    guidance programs starting from Grade 9.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Row -->
+    </div>
+  </div>
+  <!-- End Faq Area -->
+
+  <!-- Start Wellcome Area -->
+  <div class="wellcome-area">
+    <div class="well-bg">
+      <div class="test-overly"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="wellcome-text">
+              <div class="well-text text-center">
+                <h2 data-i18n="welcome.title">Welcome to Nile International Academy</h2>
+                <p data-i18n="welcome.subtitle">
+                  Where global education meets Egyptian heritage in a nurturing, innovative learning environment.
+                </p>
+                <div class="subs-feilds">
+                  <div class="suscribe-input">
+                    <input type="email" class="email form-control width-80" id="sus_email"
+                      data-i18n-placeholder="welcome.email_placeholder" placeholder="Enter email for prospectus">
+                    <button type="submit" id="sus_submit" class="add-btn width-20" data-i18n="welcome.subscribe">
+                      Subscribe
+                    </button>
+                    <div id="msg_Submit" class="h3 text-center hidden"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Wellcome Area -->
+
+  <!-- Start Faculty Area -->
+  <div id="faculty" class="our-team-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 data-i18n="faculty.title">Our Leadership Team</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="team-top">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="img/team/principal.png" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4 data-i18n="faculty.1.name">Dr. Ahmed Samir</h4>
+                <p data-i18n="faculty.1.position">School Director</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="img/team/vp-academic.png" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4 data-i18n="faculty.2.name">Dr. Sameh Johnson</h4>
+                <p data-i18n="faculty.2.position">Academic Vice Principal</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="img/team/arabic-dean.png" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4 data-i18n="faculty.3.name">Prof. Fatma Hassan</h4>
+                <p data-i18n="faculty.3.position">Dean of Arabic Studies</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="img/team/counselor.png" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4 data-i18n="faculty.4.name">Mr. Robert Chen</h4>
+                <p data-i18n="faculty.4.position">University Counselor</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Faculty Area -->
+
+  <!-- Start Campus Area -->
+  <div id="campus" class="reviews-area hidden-xs">
+    <div class="work-us">
+      <div class="work-left-text">
+        <a href="#">
+          <img src="img/about/campus-aerial.png" alt="">
+        </a>
+      </div>
+      <div class="work-right-text text-center">
+        <h2 data-i18n="campus.title">Our Campus Facilities</h2>
+        <h5 data-i18n="campus.description">Modern learning environment with science labs, sports complex, libraries, and
+          technology centers in New Cairo.</h5>
+        <a href="#contact" class="ready-btn" data-i18n="campus.schedule_tour">Schedule Campus Tour</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Campus Area -->
+
+  <!-- Start Portfolio Area -->
+  <div class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 data-i18n="gallery.title">Campus Life Gallery</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Start Portfolio -page -->
+        <div class="awesome-project-1 fix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="awesome-menu ">
+              <ul class="project-menu">
+                <li>
+                  <a href="#" class="active" data-filter="*" data-i18n="gallery.all">All</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".academic" data-i18n="gallery.academic">Academic</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".sports" data-i18n="gallery.sports">Sports</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".events" data-i18n="gallery.events">Events</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="awesome-project-content">
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 academic events">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/portfolio/science-lab.png" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/science-lab.png">
+                      <h4 data-i18n="gallery.1.title">Science Laboratory</h4>
+                      <span data-i18n="gallery.1.desc">Modern equipment for hands-on learning</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 sports">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/portfolio/sports-complex.png" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/sports-complex.png">
+                      <h4 data-i18n="gallery.2.title">Sports Complex</h4>
+                      <span data-i18n="gallery.2.desc">Olympic-size pool & multipurpose courts</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 academic">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/portfolio/library.png" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/library.png">
+                      <h4 data-i18n="gallery.3.title">Learning Resource Center</h4>
+                      <span data-i18n="gallery.3.desc">Bilingual library with digital resources</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 events">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/portfolio/graduation.png" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/graduation.png">
+                      <h4 data-i18n="gallery.4.title">Graduation Ceremony</h4>
+                      <span data-i18n="gallery.4.desc">Class of 2023 achievements</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 academic">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/portfolio/computer-lab.png" alt="" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/computer-lab.png">
+                      <h4 data-i18n="gallery.5.title">Technology Center</h4>
+                      <span data-i18n="gallery.5.desc">Coding & robotics programs</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 sports events">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/portfolio/art-exhibition.png" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/art-exhibition.png">
+                      <h4 data-i18n="gallery.6.title">Art Exhibition</h4>
+                      <span data-i18n="gallery.6.desc">Student creativity showcase</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- awesome-portfolio end -->
+  <!-- start tuition area -->
+  <div class="pricing-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 data-i18n="tuition.title">Tuition Information</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pri_table_list">
+            <h3 data-i18n="tuition.1.level">Elementary <br /> <span data-i18n="tuition.1.price">$8,000 / year</span>
+            </h3>
+            <ol>
+              <li class="check" data-i18n="tuition.1.feature1">Grades K-5 Program</li>
+              <li class="check" data-i18n="tuition.1.feature2">Bilingual Curriculum</li>
+              <li class="check" data-i18n="tuition.1.feature3">After-School Care</li>
+              <li class="check" data-i18n="tuition.1.feature4">Basic Technology Access</li>
+              <li class="check cross" data-i18n="tuition.1.feature5">AP Course Options</li>
+              <li class="check cross" data-i18n="tuition.1.feature6">University Counseling</li>
+              <li class="check" data-i18n="tuition.1.feature7">Sports & Arts</li>
+              <li class="check cross" data-i18n="tuition.1.feature8">SAT/ACT Prep</li>
+            </ol>
+            <button data-i18n="tuition.inquire">Inquire Now</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pri_table_list active">
+            <span class="saleon" data-i18n="tuition.popular">Most Popular</span>
+            <h3 data-i18n="tuition.2.level">Middle School <br /> <span data-i18n="tuition.2.price">$12,000 / year</span>
+            </h3>
+            <ol>
+              <li class="check" data-i18n="tuition.2.feature1">Grades 6-8 Program</li>
+              <li class="check" data-i18n="tuition.2.feature2">Advanced Bilingual</li>
+              <li class="check" data-i18n="tuition.2.feature3">Subject Specialization</li>
+              <li class="check" data-i18n="tuition.2.feature4">STEM Lab Access</li>
+              <li class="check" data-i18n="tuition.2.feature5">Elective Courses</li>
+              <li class="check" data-i18n="tuition.2.feature6">Career Exploration</li>
+              <li class="check" data-i18n="tuition.2.feature7">Competitive Sports</li>
+              <li class="check cross" data-i18n="tuition.2.feature8">SAT/ACT Prep</li>
+            </ol>
+            <button data-i18n="tuition.inquire">Inquire Now</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pri_table_list">
+            <h3 data-i18n="tuition.3.level">High School <br /> <span data-i18n="tuition.3.price">$15,000 / year</span>
+            </h3>
+            <ol>
+              <li class="check" data-i18n="tuition.3.feature1">Grades 9-12 Program</li>
+              <li class="check" data-i18n="tuition.3.feature2">College Preparatory</li>
+              <li class="check" data-i18n="tuition.3.feature3">AP Course Options</li>
+              <li class="check" data-i18n="tuition.3.feature4">Full STEM Access</li>
+              <li class="check" data-i18n="tuition.3.feature5">University Counseling</li>
+              <li class="check" data-i18n="tuition.3.feature6">SAT/ACT Preparation</li>
+              <li class="check" data-i18n="tuition.3.feature7">Leadership Programs</li>
+              <li class="check" data-i18n="tuition.3.feature8">Internship Opportunities</li>
+            </ol>
+            <button data-i18n="tuition.inquire">Inquire Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End tuition table area -->
+  <!-- Start Testimonials -->
+  <div class="testimonials-area">
+    <div class="testi-inner area-padding">
+      <div class="testi-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <!-- Start testimonials Start -->
+            <div class="testimonial-content text-center">
+              <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
+              <!-- start testimonial carousel -->
+              <div class="testimonial-carousel">
+                <div class="single-testi">
+                  <div class="testi-text">
+                    <p data-i18n="testimonials.1.text">
+                      "NIA provided our children with exceptional bilingual education. The balance between American
+                      curriculum and Arabic excellence is exactly what we were looking for in Cairo."
+                    </p>
+                    <h6 data-i18n="testimonials.1.author">Mr. & Mrs. Al-Masry</h6>
+                    <span data-i18n="testimonials.1.role">Parents of Grade 7 & 10 Students</span>
+                  </div>
+                </div>
+                <!-- End single item -->
+                <div class="single-testi">
+                  <div class="testi-text">
+                    <p data-i18n="testimonials.2.text">
+                      "The university counseling program prepared me perfectly for my applications to US universities.
+                      I'm now studying engineering at MIT thanks to NIA's support."
+                    </p>
+                    <h6 data-i18n="testimonials.2.author">Yousef Ahmed</h6>
+                    <span data-i18n="testimonials.2.role">Class of 2022, MIT '26</span>
+                  </div>
+                </div>
+                <!-- End single item -->
+                <div class="single-testi">
+                  <div class="testi-text">
+                    <p data-i18n="testimonials.3.text">
+                      "As an expat family, we wanted our children to maintain their Arabic while getting quality
+                      American education. NIA delivered on both fronts exceptionally well."
+                    </p>
+                    <h6 data-i18n="testimonials.3.author">The Johnson Family</h6>
+                    <span data-i18n="testimonials.3.role">From the United States</span>
+                  </div>
+                </div>
+                <!-- End single item -->
+              </div>
+            </div>
+            <!-- End testimonials end -->
+          </div>
+          <!-- End Right Feature -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+  <!-- Start Blog Area -->
+  <div class="blog-area">
+    <div class="blog-inner area-padding">
+      <div class="blog-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2 data-i18n="news.title">School News & Events</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Left Blog -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-blog">
+              <div class="single-blog-img">
+                <a href="#">
+                  <img src="img/blog/science-fair.png" alt="">
+                </a>
+              </div>
+              <div class="blog-meta">
+                <span class="date-type">
+                  <i class="fa fa-calendar"></i> <span data-i18n="news.1.date">March 15, 2024</span>
+                </span>
+              </div>
+              <div class="blog-text">
+                <h4>
+                  <a href="#" data-i18n="news.1.title">Annual Science Fair Winners Announced</a>
+                </h4>
+                <p data-i18n="news.1.excerpt">
+                  Middle school students showcased innovative projects in renewable energy and robotics. Winners will
+                  represent NIA at the national competition.
+                </p>
+              </div>
+              <span>
+                <a href="#" class="ready-btn" data-i18n="news.read_more">Read more</a>
+              </span>
+            </div>
+            <!-- Start single blog -->
+          </div>
+          <!-- End Left Blog-->
+          <!-- Start Left Blog -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-blog">
+              <div class="single-blog-img">
+                <a href="#">
+                  <img src="img/blog/university-fair.png" alt="">
+                </a>
+              </div>
+              <div class="blog-meta">
+                <span class="date-type">
+                  <i class="fa fa-calendar"></i> <span data-i18n="news.2.date">February 28, 2024</span>
+                </span>
+              </div>
+              <div class="blog-text">
+                <h4>
+                  <a href="#" data-i18n="news.2.title">University Fair Attracts 50+ Institutions</a>
+                </h4>
+                <p data-i18n="news.2.excerpt">
+                  Representatives from top universities worldwide visited campus. Students received personalized
+                  counseling and application guidance.
+                </p>
+              </div>
+              <span>
+                <a href="#" class="ready-btn" data-i18n="news.read_more">Read more</a>
+              </span>
+            </div>
+            <!-- Start single blog -->
+          </div>
+          <!-- End Left Blog-->
+          <!-- Start Right Blog-->
+          <!-- <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-blog">
+              <div class="single-blog-img">
+                <a href="#">
+                  <img src="img/blog/heritage-day.png" alt="">
+                </a>
+              </div>
+              <div class="blog-meta">
+                <span class="date-type">
+                  <i class="fa fa-calendar"></i> <span data-i18n="news.3.date">January 20, 2024</span>
+                </span>
+              </div>
+              <div class="blog-text">
+                <h4>
+                  <a href="#" data-i18n="news.3.title">Egyptian Heritage Day Celebration</a>
+                </h4>
+                <p data-i18n="news.3.excerpt">
+                  Students participated in traditional activities, food tasting, and cultural presentations celebrating Egypt's rich history and traditions.
+                </p>
+              </div>
+              <span>
+                <a href="#" class="ready-btn" data-i18n="news.read_more">Read more</a>
+              </span>
+            </div>
+          </div> -->
+          <!-- End Right Blog-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Blog -->
+  <!-- Start Contact Area -->
+  <div id="contact" class="contact-area">
+    <div class="contact-inner area-padding">
+      <div class="contact-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2 data-i18n="contact.title">Contact Us</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-mobile"></i>
+                <p data-i18n="contact.phone">
+                  Call: +20 2 1234 5678<br>
+                  <span data-i18n="contact.hours">Sunday-Thursday (8am-4pm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-envelope-o"></i>
+                <p data-i18n="contact.email">
+                  Email: admissions@nia.edu.eg<br>
+                  <span data-i18n="contact.website">Web: www.nia.edu.eg</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-map-marker"></i>
+                <p data-i18n="contact.address">
+                  Location: New Cairo, Fifth Settlement<br>
+                  <span data-i18n="contact.city">Cairo, Egypt</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start Google Map -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <!-- Start Map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.769276035313!2d31.419515315115568!3d30.06788158187022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e5c41f9e9c9%3A0x3c5b3c5b3c5b3c5b!2sNew%20Cairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1648561234567!5m2!1sen!2seg"
+              width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- End Map -->
+          </div>
+          <!-- End Google Map -->
+
+          <!-- Start  contact -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form contact-form">
+              <div id="sendmessage" data-i18n="contact.success">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name"
+                    data-i18n-placeholder="contact.form.name" placeholder="Your Name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email"
+                    data-i18n-placeholder="contact.form.email" placeholder="Your Email" data-rule="email"
+                    data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject"
+                    data-i18n-placeholder="contact.form.subject" placeholder="Subject" data-rule="minlen:4"
+                    data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-i18n-placeholder="contact.form.message"
+                    placeholder="Message" data-rule="required" data-msg="Please write something for us"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" data-i18n="contact.form.submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Left contact -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Area -->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>N</span>IA</h2>
+                  <p data-i18n="footer.tagline">Nile International Academy</p>
+                </div>
+                <p data-i18n="footer.description">
+                  Premier bilingual education in Cairo preparing global citizens with academic excellence and cultural
+                  understanding since 2005.
+                </p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4 data-i18n="footer.quick_links">Quick Links</h4>
+                <div class="footer-contacts">
+                  <p><a href="#about" data-i18n="footer.about">About NIA</a></p>
+                  <p><a href="#academics" data-i18n="footer.academics">Academic Programs</a></p>
+                  <p><a href="#admissions" data-i18n="footer.admissions">Admissions</a></p>
+                  <p><a href="#contact" data-i18n="footer.contact">Contact Us</a></p>
+                  <p><a href="#" data-i18n="footer.portal">Parent Portal</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4 data-i18n="footer.contact_info">Contact Information</h4>
+                <div class="footer-contacts">
+                  <p><span data-i18n="footer.address">Address:</span> New Cairo, Fifth Settlement, Cairo</p>
+                  <p><span data-i18n="footer.phone">Phone:</span> +20 2 1234 5678</p>
+                  <p><span data-i18n="footer.email">Email:</span> info@nia.edu.eg</p>
+                  <p><span data-i18n="footer.hours">Office Hours:</span> Sun-Thu 8:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p data-i18n="footer.copyright">
+                &copy; 2024 Nile International Academy. All Rights Reserved | <a href="#"
+                  data-i18n="footer.privacy">Privacy Policy</a> | <a href="#" data-i18n="footer.terms">Terms of Use</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/knob/jquery.knob.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="lib/appear/jquery.appear.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Define translation dictionaries
+    const translations = {
+      en: {
+        // Page Meta
+        "page.title": "Nile International Academy - Premier Bilingual Education in Cairo",
+        // Navigation
+        "nav.brand_subtitle": "Nile International Academy",
+        "nav.toggle": "Toggle navigation",
+        "nav.home": "Home",
+        "nav.about": "About",
+        "nav.academics": "Academics",
+        "nav.faculty": "Faculty",
+        "nav.campus": "Campus",
+        "nav.admissions": "Admissions",
+        "nav.admissions_apply": "Apply Now",
+        "nav.admissions_tour": "Schedule Tour",
+        "nav.admissions_fees": "Tuition Fees",
+        "nav.contact": "Contact",
+        // Slider
+        "slider.1.title1": "Excellence in Bilingual Education",
+        "slider.1.title2": "Nurturing Global Citizens Through Academic Excellence",
+        "slider.2.title1": "American Curriculum • Arabic Excellence",
+        "slider.2.title2": "Preparing Students for Universities Worldwide",
+        "slider.3.title1": "State-of-the-Art Facilities",
+        "slider.3.title2": "Modern Learning Environment in New Cairo",
+        "slider.see_programs": "See Programs",
+        "slider.contact_us": "Contact Us",
+        "slider.learn_more": "Learn More",
+        "slider.schedule_tour": "Schedule Tour",
+        "slider.view_campus": "View Campus",
+        "slider.apply_now": "Apply Now",
+        // About Section
+        "about.title": "About Nile International Academy",
+        "about.subtitle": "Our Educational Philosophy",
+        "about.description": "Founded in 2005, Nile International Academy is a premier bilingual institution in Cairo offering American curriculum education with strong Arabic language and cultural programs. We prepare students for global citizenship while maintaining deep connections to Egyptian heritage.",
+        "about.feature1": "American Curriculum (K-12)",
+        "about.feature2": "Bilingual English/Arabic Programs",
+        "about.feature3": "University Preparation & Counseling",
+        "about.feature4": "STEM & Innovation Labs",
+        "about.feature5": "Sports & Arts Facilities",
+        // Academics
+        "academics.title": "Academic Programs",
+        "academics.1.title": "Elementary School",
+        "academics.1.description": "Kindergarten to Grade 5: Foundation building with bilingual literacy, numeracy, and social development in a nurturing environment.",
+        "academics.2.title": "Middle School",
+        "academics.2.description": "Grades 6-8: Specialized subject teaching, critical thinking development, and introduction to advanced academic concepts.",
+        "academics.3.title": "High School",
+        "academics.3.description": "Grades 9-12: College preparatory program with AP courses, university counseling, and specialized tracks.",
+        "academics.4.title": "STEM Program",
+        "academics.4.description": "Advanced Science, Technology, Engineering & Mathematics program with robotics, coding, and research opportunities.",
+        "academics.5.title": "Arabic Program",
+        "academics.5.description": "Comprehensive Arabic language curriculum including Modern Standard Arabic and classical literature studies.",
+        "academics.6.title": "Extracurricular",
+        "academics.6.description": "Sports teams, arts programs, music, drama, debate club, and community service opportunities.",
+        // Stats
+        "stats.graduation": "Graduation Rate",
+        "stats.university": "University Acceptance",
+        "stats.satisfaction": "Parent Satisfaction",
+        "stats.retention": "Teacher Retention",
+        // FAQ
+        "faq.title": "Frequently Asked Questions",
+        "faq.1.question": "What curriculum do you follow?",
+        "faq.1.answer": "We follow an American curriculum aligned with Common Core standards, enhanced with Arabic language and Islamic studies for Muslim students. Our program prepares students for both American and Egyptian university systems.",
+        "faq.2.question": "What are the school hours?",
+        "faq.2.answer": "School operates Sunday through Thursday from 7:30 AM to 3:00 PM. Extended care is available until 5:00 PM for working parents. Extra-curricular activities typically run from 3:15 PM to 4:30 PM.",
+        "faq.3.question": "Do you offer transportation?",
+        "faq.3.answer": "Yes, we provide safe and monitored transportation services covering most areas of Cairo. Our buses are equipped with GPS tracking, seat belts, and are supervised by trained attendants.",
+        "faq.4.question": "What universities do your graduates attend?",
+        "faq.4.answer": "Our graduates have been accepted to top universities worldwide including Harvard, MIT, Stanford, AUC, Cairo University, and universities in the UK, Canada, and throughout Europe.",
+        // Tabs
+        "tabs.academic": "Academic Calendar",
+        "tabs.admissions": "Admissions Process",
+        "tabs.support": "Student Support",
+        "tabs.academic_content1": "The academic year runs from September to June with three terms. We observe both Egyptian and international holidays. Summer programs are available in July for enrichment and review.",
+        "tabs.academic_content2": "Key dates include parent-teacher conferences in October and March, mid-term breaks in November and April, and final exams in May. Detailed calendar available upon request.",
+        "tabs.admissions_content1": "Admissions are selective and based on previous academic records, entrance assessments, and family interviews. Applications for the upcoming academic year open in January.",
+        "tabs.admissions_content2": "Required documents include birth certificate, previous school records, passport photos, and medical reports. Scholarships available for exceptional students.",
+        "tabs.support_content1": "We provide comprehensive support including learning resource center, counseling services, college advising, and special education support. Our student-teacher ratio is 15:1.",
+        "tabs.support_content2": "Additional services include after-school tutoring, university test preparation (SAT/ACT), and career guidance programs starting from Grade 9.",
+        // Welcome
+        "welcome.title": "Welcome to Nile International Academy",
+        "welcome.subtitle": "Where global education meets Egyptian heritage in a nurturing, innovative learning environment.",
+        "welcome.email_placeholder": "Enter email for prospectus",
+        "welcome.subscribe": "Subscribe",
+        // Faculty
+        "faculty.title": "Our Leadership Team",
+        "faculty.1.name": "Dr. Ahmed Samir",
+        "faculty.1.position": "School Director",
+        "faculty.2.name": "Dr. Samer Ali",
+        "faculty.2.position": "Academic Vice Principal",
+        "faculty.3.name": "Prof. Fatma Hassan",
+        "faculty.3.position": "Dean of Arabic Studies",
+        "faculty.4.name": "Mr. Mazin Ahmed",
+        "faculty.4.position": "University Counselor",
+        // Campus
+        "campus.title": "Our Campus Facilities",
+        "campus.description": "Modern learning environment with science labs, sports complex, libraries, and technology centers in New Cairo.",
+        "campus.schedule_tour": "Schedule Campus Tour",
+        // Gallery
+        "gallery.title": "Campus Life Gallery",
+        "gallery.all": "All",
+        "gallery.academic": "Academic",
+        "gallery.sports": "Sports",
+        "gallery.events": "Events",
+        "gallery.1.title": "Science Laboratory",
+        "gallery.1.desc": "Modern equipment for hands-on learning",
+        "gallery.2.title": "Sports Complex",
+        "gallery.2.desc": "Olympic-size pool & multipurpose courts",
+        "gallery.3.title": "Learning Resource Center",
+        "gallery.3.desc": "Bilingual library with digital resources",
+        "gallery.4.title": "Graduation Ceremony",
+        "gallery.4.desc": "Class of 2023 achievements",
+        "gallery.5.title": "Technology Center",
+        "gallery.5.desc": "Coding & robotics programs",
+        "gallery.6.title": "Art Exhibition",
+        "gallery.6.desc": "Student creativity showcase",
+        // Tuition
+        "tuition.title": "Tuition Information",
+        "tuition.1.level": "Elementary",
+        "tuition.1.price": "$8,000 / year",
+        "tuition.1.feature1": "Grades K-5 Program",
+        "tuition.1.feature2": "Bilingual Curriculum",
+        "tuition.1.feature3": "After-School Care",
+        "tuition.1.feature4": "Basic Technology Access",
+        "tuition.1.feature5": "AP Course Options",
+        "tuition.1.feature6": "University Counseling",
+        "tuition.1.feature7": "Sports & Arts",
+        "tuition.1.feature8": "SAT/ACT Prep",
+        "tuition.2.level": "Middle School",
+        "tuition.2.price": "$12,000 / year",
+        "tuition.2.feature1": "Grades 6-8 Program",
+        "tuition.2.feature2": "Advanced Bilingual",
+        "tuition.2.feature3": "Subject Specialization",
+        "tuition.2.feature4": "STEM Lab Access",
+        "tuition.2.feature5": "Elective Courses",
+        "tuition.2.feature6": "Career Exploration",
+        "tuition.2.feature7": "Competitive Sports",
+        "tuition.2.feature8": "SAT/ACT Prep",
+        "tuition.3.level": "High School",
+        "tuition.3.price": "$15,000 / year",
+        "tuition.3.feature1": "Grades 9-12 Program",
+        "tuition.3.feature2": "College Preparatory",
+        "tuition.3.feature3": "AP Course Options",
+        "tuition.3.feature4": "Full STEM Access",
+        "tuition.3.feature5": "University Counseling",
+        "tuition.3.feature6": "SAT/ACT Preparation",
+        "tuition.3.feature7": "Leadership Programs",
+        "tuition.3.feature8": "Internship Opportunities",
+        "tuition.popular": "Most Popular",
+        "tuition.inquire": "Inquire Now",
+        // Testimonials
+        "testimonials.1.text": "\"NIA provided our children with exceptional bilingual education. The balance between American curriculum and Arabic excellence is exactly what we were looking for in Cairo.\"",
+        "testimonials.1.author": "Mr. & Mrs. Al-Masry",
+        "testimonials.1.role": "Parents of Grade 7 & 10 Students",
+        "testimonials.2.text": "\"The university counseling program prepared me perfectly for my applications to US universities. I'm now studying engineering at MIT thanks to NIA's support.\"",
+        "testimonials.2.author": "Yousef Ahmed",
+        "testimonials.2.role": "Class of 2022, MIT '26",
+        "testimonials.3.text": "\"As an expat family, we wanted our children to maintain their Arabic while getting quality American education. NIA delivered on both fronts exceptionally well.\"",
+        "testimonials.3.author": "The Johnson Family",
+        "testimonials.3.role": "From the United States",
+        // News
+        "news.title": "School News & Events",
+        "news.1.date": "March 15, 2024",
+        "news.1.title": "Annual Science Fair Winners Announced",
+        "news.1.excerpt": "Middle school students showcased innovative projects in renewable energy and robotics. Winners will represent NIA at the national competition.",
+        "news.2.date": "February 28, 2024",
+        "news.2.title": "University Fair Attracts 50+ Institutions",
+        "news.2.excerpt": "Representatives from top universities worldwide visited campus. Students received personalized counseling and application guidance.",
+        "news.3.date": "January 20, 2024",
+        "news.3.title": "Egyptian Heritage Day Celebration",
+        "news.3.excerpt": "Students participated in traditional activities, food tasting, and cultural presentations celebrating Egypt's rich history and traditions.",
+        "news.read_more": "Read more",
+        // Contact
+        "contact.title": "Contact Us",
+        "contact.phone": "Call: +20 2 1234 5678",
+        "contact.hours": "Sunday-Thursday (8am-4pm)",
+        "contact.email": "Email: admissions@nia.edu.eg",
+        "contact.website": "Web: www.nia.edu.eg",
+        "contact.address": "Location: New Cairo, Fifth Settlement",
+        "contact.city": "Cairo, Egypt",
+        "contact.success": "Your message has been sent. Thank you!",
+        "contact.form.name": "Your Name",
+        "contact.form.email": "Your Email",
+        "contact.form.subject": "Subject",
+        "contact.form.message": "Message",
+        "contact.form.submit": "Send Message",
+        // Footer
+        "footer.tagline": "Nile International Academy",
+        "footer.description": "Premier bilingual education in Cairo preparing global citizens with academic excellence and cultural understanding since 2005.",
+        "footer.quick_links": "Quick Links",
+        "footer.about": "About NIA",
+        "footer.academics": "Academic Programs",
+        "footer.admissions": "Admissions",
+        "footer.contact": "Contact Us",
+        "footer.portal": "Parent Portal",
+        "footer.contact_info": "Contact Information",
+        "footer.address": "Address:",
+        "footer.phone": "Phone:",
+        "footer.email": "Email:",
+        "footer.hours": "Office Hours:",
+        "footer.copyright": "&copy; 2024 Nile International Academy. All Rights Reserved | Privacy Policy | Terms of Use",
+        "footer.privacy": "Privacy Policy",
+        "footer.terms": "Terms of Use"
+      },
+      ar: {
+        // Page Meta
+        "page.title": "أكاديمية النيل الدولية - التعليم ثنائي اللغة المتميز في القاهرة",
+        // Navigation
+        "nav.brand_subtitle": "أكاديمية النيل الدولية",
+        "nav.toggle": "تبديل التنقل",
+        "nav.home": "الرئيسية",
+        "nav.about": "عن الأكاديمية",
+        "nav.academics": "البرامج الأكاديمية",
+        "nav.faculty": "الهيئة التدريسية",
+        "nav.campus": "الحرم الجامعي",
+        "nav.admissions": "القبول",
+        "nav.admissions_apply": "قدم الآن",
+        "nav.admissions_tour": "جدولة زيارة",
+        "nav.admissions_fees": "الرسوم الدراسية",
+        "nav.contact": "اتصل بنا",
+        // Slider
+        "slider.1.title1": "التميز في التعليم ثنائي اللغة",
+        "slider.1.title2": "تنمية المواطنين العالميين من خلال التميز الأكاديمي",
+        "slider.2.title1": "منهج أمريكي • تميز عربي",
+        "slider.2.title2": "إعداد الطلاب للجامعات حول العالم",
+        "slider.3.title1": "مرافق على أحدث طراز",
+        "slider.3.title2": "بيئة تعليمية حديثة في القاهرة الجديدة",
+        "slider.see_programs": "عرض البرامج",
+        "slider.contact_us": "اتصل بنا",
+        "slider.learn_more": "اعرف المزيد",
+        "slider.schedule_tour": "جدولة زيارة",
+        "slider.view_campus": "عرض الحرم الجامعي",
+        "slider.apply_now": "قدم الآن",
+        // About Section
+        "about.title": "عن أكاديمية النيل الدولية",
+        "about.subtitle": "فلسفتنا التعليمية",
+        "about.description": "تأسست أكاديمية النيل الدولية عام 2005، وهي مؤسسة تعليمية رائدة ثنائية اللغة في القاهرة تقدم تعليمًا بمنهج أمريكي مع برامج قوية في اللغة العربية والثقافة. نحن نعد الطلاب للمواطنة العالمية مع الحفاظ على روابط عميقة بالتراث المصري.",
+        "about.feature1": "منهج أمريكي (من الروضة إلى الصف الثاني عشر)",
+        "about.feature2": "برامج ثنائية اللغة إنجليزية/عربية",
+        "about.feature3": "الإعداد الجامعي والإرشاد",
+        "about.feature4": "معامل العلوم والتكنولوجيا والهندسة والرياضيات والابتكار",
+        "about.feature5": "مرافق الرياضة والفنون",
+        // Academics
+        "academics.title": "البرامج الأكاديمية",
+        "academics.1.title": "المدرسة الابتدائية",
+        "academics.1.description": "من الروضة إلى الصف الخامس: بناء الأساس مع محو الأمية ثنائية اللغة والعد والحساب والتطور الاجتماعي في بيئة رعاية.",
+        "academics.2.title": "المدرسة المتوسطة",
+        "academics.2.description": "الصفوف 6-8: تدريس المواد المتخصصة، وتطوير التفكير النقدي، والتعريف بالمفاهيم الأكاديمية المتقدمة.",
+        "academics.3.title": "المدرسة الثانوية",
+        "academics.3.description": "الصفوف 9-12: برنامج الإعداد الجامعي مع دورات متقدمة، والإرشاد الجامعي، والمسارات المتخصصة.",
+        "academics.4.title": "برنامج العلوم والتكنولوجيا والهندسة والرياضيات",
+        "academics.4.description": "برنامج متقدم في العلوم والتكنولوجيا والهندسة والرياضيات مع الروبوتات والبرمجة وفرص البحث.",
+        "academics.5.title": "برنامج اللغة العربية",
+        "academics.5.description": "منهج شامل للغة العربية يشمل العربية الفصحى الحديثة ودراسات الأدب الكلاسيكي.",
+        "academics.6.title": "الأنشطة اللامنهجية",
+        "academics.6.description": "فرق رياضية، برامج فنية، موسيقى، دراما، نادي المناظرات، وفرص خدمة المجتمع.",
+        // Stats
+        "stats.graduation": "معدل التخرج",
+        "stats.university": "القبول الجامعي",
+        "stats.satisfaction": "رضا أولياء الأمور",
+        "stats.retention": "استبقاء المعلمين",
+        // FAQ
+        "faq.title": "الأسئلة الشائعة",
+        "faq.1.question": "ما المنهج الذي تتبعونه؟",
+        "faq.1.answer": "نحن نتبع منهجًا أمريكيًا يتماشى مع معايير الأساس المشتركة، مع تعزيزه باللغة العربية والدراسات الإسلامية للطلاب المسلمين. برنامجنا يعد الطلاب لكل من أنظمة الجامعات الأمريكية والمصرية.",
+        "faq.2.question": "ما هي ساعات المدرسة؟",
+        "faq.2.answer": "تعمل المدرسة من الأحد إلى الخميس من الساعة 7:30 صباحًا حتى 3:00 مساءً. تتوفر رعاية ممتدة حتى الساعة 5:00 مساءً لأولياء الأمور العاملين. عادةً ما تجري الأنشطة اللامنهجية من الساعة 3:15 مساءً حتى 4:30 مساءً.",
+        "faq.3.question": "هل تقدمون خدمات النقل؟",
+        "faq.3.answer": "نعم، نقدم خدمات نقل آمنة ومراقبة تغطي معظم مناطق القاهرة. حافلاتنا مجهزة بتتبع GPS، وأحزمة أمان، ويشرف عليها مرافقون مدربون.",
+        "faq.4.question": "ما هي الجامعات التي يلتحق بها خريجوكم؟",
+        "faq.4.answer": "تم قبول خريجينا في أفضل الجامعات حول العالم بما في ذلك هارفارد ومعهد ماساتشوستس للتكنولوجيا وستانفورد والجامعة الأمريكية بالقاهرة وجامعة القاهرة وجامعات في المملكة المتحدة وكندا وأوروبا.",
+        // Tabs
+        "tabs.academic": "التقويم الأكاديمي",
+        "tabs.admissions": "عملية القبول",
+        "tabs.support": "دعم الطلاب",
+        "tabs.academic_content1": "تمتد السنة الدراسية من سبتمبر إلى يونيو مع ثلاثة فصول. نحترم الأعياد المصرية والدولية. تتوفر برامج صيفية في يوليو للإثراء والمراجعة.",
+        "tabs.academic_content2": "تشمل التواريخ الرئيسية مؤتمرات أولياء الأمور والمعلمين في أكتوبر ومارس، وإجازات منتصف الفصل في نوفمبر وأبريل، والامتحانات النهائية في مايو. التقويم التفصيلي متاح عند الطلب.",
+        "tabs.admissions_content1": "القبول انتقائي ويعتمد على السجلات الأكاديمية السابقة، وتقييمات القبول، ومقابلات الأسرة. تفتح طلبات الالتحاق للسنة الدراسية القادمة في يناير.",
+        "tabs.admissions_content2": "تشمل المستندات المطلوبة شهادة الميلاد، وسجلات المدرسة السابقة، وصور جواز السفر، والتقارير الطبية. تتوفر منح دراسية للطلاب المتميزين.",
+        "tabs.support_content1": "نقدم دعمًا شاملاً بما في ذلك مركز الموارد التعليمية، وخدمات الإرشاد، والإرشاد الجامعي، ودعم التعليم الخاص. نسبة الطالب إلى المعلم لدينا هي 15:1.",
+        "tabs.support_content2": "تشمل الخدمات الإضافية الدروس الخصوصية بعد المدرسة، والإعداد لاختبارات الجامعة (SAT/ACT)، وبرامج التوجيه المهني بدءًا من الصف التاسع.",
+        // Welcome
+        "welcome.title": "مرحبًا بكم في أكاديمية النيل الدولية",
+        "welcome.subtitle": "حيث يلتقي التعليم العالمي بالتراث المصري في بيئة تعليمية راعية ومبتكرة.",
+        "welcome.email_placeholder": "أدخل البريد الإلكتروني للحصول على النشرة التعريفية",
+        "welcome.subscribe": "اشتراك",
+        // Faculty
+        "faculty.title": "فريق القيادة لدينا",
+        "faculty.1.name": "د. أحمد سمير",
+        "faculty.1.position": "مدير المدرسة",
+        "faculty.2.name": "د.سامر علي",
+        "faculty.2.position": "نائب المدير الأكاديمي",
+        "faculty.3.name": "أ.د. فارس حسن",
+        "faculty.3.position": "عميد الدراسات العربية",
+        "faculty.4.name": "السيد مازن أحمد",
+        "faculty.4.position": "مرشد جامعي",
+        // Campus
+        "campus.title": "مرافق الحرم الجامعي لدينا",
+        "campus.description": "بيئة تعلم حديثة مع معامل علوم، مجمع رياضي، مكتبات، ومراكز تكنولوجيا في القاهرة الجديدة.",
+        "campus.schedule_tour": "جدولة زيارة للحرم الجامعي",
+        // Gallery
+        "gallery.title": "معرض الحياة في الحرم الجامعي",
+        "gallery.all": "الكل",
+        "gallery.academic": "أكاديمي",
+        "gallery.sports": "رياضي",
+        "gallery.events": "فعاليات",
+        "gallery.1.title": "معمل العلوم",
+        "gallery.1.desc": "معدات حديثة للتعلم العملي",
+        "gallery.2.title": "المجمع الرياضي",
+        "gallery.2.desc": "مسبح أولمبي وملاعب متعددة الأغراض",
+        "gallery.3.title": "مركز مصادر التعلم",
+        "gallery.3.desc": "مكتبة ثنائية اللغة مع موارد رقمية",
+        "gallery.4.title": "حفل التخرج",
+        "gallery.4.desc": "إنجازات دفعة 2023",
+        "gallery.5.title": "مركز التكنولوجيا",
+        "gallery.5.desc": "برامج البرمجة والروبوتات",
+        "gallery.6.title": "معرض الفنون",
+        "gallery.6.desc": "عرض إبداعات الطلاب",
+        // Tuition
+        "tuition.title": "معلومات الرسوم الدراسية",
+        "tuition.1.level": "ابتدائي",
+        "tuition.1.price": "8,000 دولار / سنة",
+        "tuition.1.feature1": "برنامج الصفوف K-5",
+        "tuition.1.feature2": "منهج ثنائي اللغة",
+        "tuition.1.feature3": "رعاية بعد المدرسة",
+        "tuition.1.feature4": "وصول أساسي للتكنولوجيا",
+        "tuition.1.feature5": "خيارات دورات متقدمة",
+        "tuition.1.feature6": "إرشاد جامعي",
+        "tuition.1.feature7": "رياضة وفنون",
+        "tuition.1.feature8": "إعداد SAT/ACT",
+        "tuition.2.level": "المتوسطة",
+        "tuition.2.price": "12,000 دولار / سنة",
+        "tuition.2.feature1": "برنامج الصفوف 6-8",
+        "tuition.2.feature2": "ثنائية اللغة المتقدمة",
+        "tuition.2.feature3": "تخصص المواد",
+        "tuition.2.feature4": "وصول لمعامل العلوم والتكنولوجيا والهندسة والرياضيات",
+        "tuition.2.feature5": "دورات اختيارية",
+        "tuition.2.feature6": "استكشاف المهن",
+        "tuition.2.feature7": "رياضة تنافسية",
+        "tuition.2.feature8": "إعداد SAT/ACT",
+        "tuition.3.level": "الثانوية",
+        "tuition.3.price": "15,000 دولار / سنة",
+        "tuition.3.feature1": "برنامج الصفوف 9-12",
+        "tuition.3.feature2": "الإعداد الجامعي",
+        "tuition.3.feature3": "خيارات دورات متقدمة",
+        "tuition.3.feature4": "وصول كامل للعلوم والتكنولوجيا والهندسة والرياضيات",
+        "tuition.3.feature5": "إرشاد جامعي",
+        "tuition.3.feature6": "إعداد SAT/ACT",
+        "tuition.3.feature7": "برامج القيادة",
+        "tuition.3.feature8": "فرص التدريب",
+        "tuition.popular": "الأكثر شيوعًا",
+        "tuition.inquire": "استفسر الآن",
+        // Testimonials
+        "testimonials.1.text": "\"قدمت أكاديمية النيل الدولية لأطفالنا تعليمًا ثنائي اللغة استثنائيًا. التوازن بين المنهج الأمريكي والتميز العربي هو بالضبط ما كنا نبحث عنه في القاهرة.\"",
+        "testimonials.1.author": "السيد والسيدة المصري",
+        "testimonials.1.role": "أولياء أمور طلاب الصف السابع والعاشر",
+        "testimonials.2.text": "\"أعدني برنامج الإرشاد الجامعي بشكل مثالي لطلباتي للجامعات الأمريكية. أنا أدرس الهندسة في معهد ماساتشوستس للتكنولوجيا الآن بفضل دعم أكاديمية النيل الدولية.\"",
+        "testimonials.2.author": "يوسف أحمد",
+        "testimonials.2.role": "دفعة 2022، معهد ماساتشوستس للتكنولوجيا 2026",
+        "testimonials.3.text": "\"كوحدة أسرية مغتربة، أردنا أن يحافظ أطفالنا على لغتهم العربية مع الحصول على تعليم أمريكي عالي الجودة. قدمت أكاديمية النيل الدولية على الجبهتين بشكل استثنائي.\"",
+        "testimonials.3.author": "عائلة جونسون",
+        "testimonials.3.role": "من الولايات المتحدة",
+        // News
+        "news.title": "أخبار المدرسة والفعاليات",
+        "news.1.date": "15 مارس 2024",
+        "news.1.title": "إعلان الفائزين في المعرض العلمي السنوي",
+        "news.1.excerpt": "عرض طلاب المدرسة المتوسطة مشاريع مبتكرة في الطاقة المتجددة والروبوتات. سيمثل الفائزون أكاديمية النيل الدولية في المسابقة الوطنية.",
+        "news.2.date": "28 فبراير 2024",
+        "news.2.title": "معرض الجامعات يجذب أكثر من 50 مؤسسة",
+        "news.2.excerpt": "زار ممثلون من أفضل الجامعات حول العالم الحرم الجامعي. تلقى الطلاب إرشادًا مخصصًا وتوجيهًا للطلبات.",
+        "news.3.date": "20 يناير 2024",
+        "news.3.title": "احتفال يوم التراث المصري",
+        "news.3.excerpt": "شارك الطلاب في أنشطة تقليدية وتذوق الطعام وعروض ثقافية تحتفل بالتاريخ الغني وتقاليد مصر.",
+        "news.read_more": "اقرأ المزيد",
+        // Contact
+        "contact.title": "اتصل بنا",
+        "contact.phone": "هاتف: 20 2 1234 5678+",
+        "contact.hours": "الأحد-الخميس (8ص-4م)",
+        "contact.email": "البريد الإلكتروني: admissions@nia.edu.eg",
+        "contact.website": "الموقع: www.nia.edu.eg",
+        "contact.address": "العنوان: القاهرة الجديدة، التجمع الخامس",
+        "contact.city": "القاهرة، مصر",
+        "contact.success": "تم إرسال رسالتك. شكرًا لك!",
+        "contact.form.name": "اسمك",
+        "contact.form.email": "بريدك الإلكتروني",
+        "contact.form.subject": "الموضوع",
+        "contact.form.message": "الرسالة",
+        "contact.form.submit": "إرسال الرسالة",
+        // Footer
+        "footer.tagline": "أكاديمية النيل الدولية",
+        "footer.description": "تعليم ثنائي اللغة متميز في القاهرة يعد مواطنين عالميين بتميز أكاديمي وفهم ثقافي منذ عام 2005.",
+        "footer.quick_links": "روابط سريعة",
+        "footer.about": "عن الأكاديمية",
+        "footer.academics": "البرامج الأكاديمية",
+        "footer.admissions": "القبول",
+        "footer.contact": "اتصل بنا",
+        "footer.portal": "بوابة أولياء الأمور",
+        "footer.contact_info": "معلومات الاتصال",
+        "footer.address": "العنوان:",
+        "footer.phone": "الهاتف:",
+        "footer.email": "البريد الإلكتروني:",
+        "footer.hours": "ساعات العمل:",
+        "footer.copyright": "&copy; 2024 أكاديمية النيل الدولية. جميع الحقوق محفوظة | سياسة الخصوصية | شروط الاستخدام",
+        "footer.privacy": "سياسة الخصوصية",
+        "footer.terms": "شروط الاستخدام"
+      }
+    };
+
+    // Cookie helper functions
+    function setCookie(name, value, days) {
+      // Using localStorage for simplicity
+      localStorage.setItem(name, value);
+    }
+
+    function getCookie(name) {
+      return localStorage.getItem(name);
+    }
+
+    // Core translation function
+    function loadLanguage(lang) {
+      // 1. Set HTML language and direction attributes
+      document.documentElement.setAttribute('lang', lang);
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.classList.add('rtl');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.classList.remove('rtl');
+      }
+
+      // 2. Update all elements with data-i18n attributes
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+
+      // 3. Update data-i18n-placeholder attributes
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+          element.setAttribute('placeholder', translations[lang][key]);
+        }
+      });
+
+      // 4. Update the language switcher UI
+      const currentFlag = document.getElementById('current-flag');
+      const currentLangText = document.getElementById('current-lang');
+      const currentLangBtn = document.getElementById('current-lang-btn');
+
+      if (lang === 'ar') {
+        currentFlag.src = 'https://flagcdn.com/w20/sa.png';
+        currentFlag.alt = 'العربية';
+        currentLangText.textContent = 'AR';
+        if (currentLangBtn) {
+          currentLangBtn.querySelector('span').textContent = 'AR';
+        }
+      } else {
+        currentFlag.src = 'https://flagcdn.com/w20/gb.png';
+        currentFlag.alt = 'English';
+        currentLangText.textContent = 'EN';
+        if (currentLangBtn) {
+          currentLangBtn.querySelector('span').textContent = 'EN';
+        }
+      }
+
+      // 5. Save preference to localStorage
+      setCookie('preferred-language', lang, 30);
+    }
+
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      // Check for saved preference in cookie
+      const savedLang = getCookie('preferred-language');
+
+      // If no cookie exists, check browser language
+      const browserLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+
+      const defaultLang = savedLang || browserLang;
+
+      loadLanguage(defaultLang);
+
+      // Set up click handlers for language switcher options
+      document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function (e) {
+          e.preventDefault();
+          const selectedLang = this.getAttribute('data-lang');
+          loadLanguage(selectedLang);
+        });
+      });
+    });
+  </script>
+
+  <script src="animations.js"></script>
+
+  <script src="whatsapp.js"></script>
+</body>
+
+</html>
