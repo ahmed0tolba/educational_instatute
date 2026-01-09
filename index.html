@@ -41,75 +41,7 @@
 
   <!-- Language Switcher Styles -->
   <style>
-    .lang-switcher {
-      display: inline-block;
-      margin-top: 1.5em;
-      margin-bottom: 1.5em;
-    }
-
-    .lang-dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .lang-option {
-      color: black !important;
-    }
-
-    .lang-btn {
-      background: none;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      color: white;
-      /* padding: 8px 15px; */
-      border-radius: 4px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      transition: all 0.3s ease;
-    }
-
-    .lang-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .lang-btn img {
-      width: 20px;
-      margin-right: 8px;
-    }
-
-    .lang-dropdown-content {
-      display: none;
-      position: absolute;
-      background: white;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      border-radius: 4px;
-      overflow: hidden;
-      padding: .5em;
-      width: 8em;
-    }
-
-    .lang-dropdown-content a {
-      color: #333;
-      padding: 10px 15px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      transition: background 0.3s ease;
-    }
-
-    .lang-dropdown-content a:hover {
-      background: #f5f5f5;
-    }
-
-    .lang-dropdown-content a img {
-      width: 20px;
-      margin-right: 10px;
-    }
-
-    .lang-dropdown:hover .lang-dropdown-content {
-      display: block;
-    }
+    
 
     /* RTL Support */
     html[dir="rtl"] {
@@ -118,16 +50,6 @@
 
     html[dir="rtl"] .navbar-nav {
       float: right !important;
-    }
-
-    html[dir="rtl"] .lang-btn {
-      margin-right: 20px;
-      margin-left: 0;
-    }
-
-    html[dir="rtl"] .lang-btn img {
-      margin-right: 0;
-      margin-left: 8px;
     }
 
     html[dir="rtl"] .single-well ul li i {
